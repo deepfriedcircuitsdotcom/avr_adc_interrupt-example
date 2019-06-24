@@ -25,7 +25,7 @@ int main(void)
     +----+----+-----+----+----+-----+-----+-----+
 	|ADEN|ADSC|ADATE|ADIF|ADIE|ADPS2|ADPS1|ADPS0| 
 	+----+----+-----+----+----+-----+-----+-----+
-	 0    1    2     3    4    5     6     7     bit
+	 7    6    5     4    3    2     1     0     bit
 	 R/W  R/W   R/W  R/W  R/W   R/W   R/W        read/write
 	 0    0    0     0    0    0     0     0     initial value
 
@@ -54,7 +54,7 @@ int main(void)
 	********/
 
 	ADMUX = (1<<REFS0); // set voltage ref to AVCC
-
+    
 	/********
 
 	ADMUX – ADC Multiplexer Selection Register
