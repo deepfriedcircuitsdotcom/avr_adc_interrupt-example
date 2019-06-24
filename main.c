@@ -53,7 +53,7 @@ int main(void)
 	
 	********/
 
-	ADMUX = (1<<REFS0); // set voltage ref to AREF
+	ADMUX = (1<<REFS0); // set voltage ref to AVCC
 
 	/********
 
@@ -61,7 +61,7 @@ int main(void)
     +-----+-----+-----+---+----+----+----+----+
 	|REFS1|REFS0|ADLAR| - |MUX3|MUX2|MUX1|MUX0| 
 	+-----+-----+-----+---+----+----+----+----+
-	 0     1     2     3   4    5    6    7     bit
+	 7     6     5     4   3    2    1    0     bit
 	 R/W   R/W   R/W   R   R/W  R/W  R/W  R/W   read/write
 	 0     0     0     0   0    0    0    0     initial value
 
